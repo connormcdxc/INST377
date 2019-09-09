@@ -1,0 +1,5 @@
+.heroSection {
+  width:100%;
+  display:flex;
+  background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25));
+}
