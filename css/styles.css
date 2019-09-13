@@ -26,7 +26,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(33,33,33,0.5), rgba(33,33,33,0.5)), url(/Users/connormcdonald/Documents/GitHub/INST377/images/art-colorful-contemporary-2047905.jpg);
+  background: linear-gradient(rgba(33,33,33,0.5), rgba(33,33,33,0.5)), url(../images/art-colorful-contemporary-2047905.jpg);
   padding-top: 75px;
   padding-bottom: 75px;
   background-position: 50%;
@@ -94,6 +94,11 @@ nav {
 .portal {
   width:30%;
   background-color: #ccc;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 .portalContainer {
   display:flex;
