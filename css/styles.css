@@ -31,6 +31,7 @@ a:hover {
   padding-bottom: 75px;
   background-position: 50%;
   margin-top:90px;
+  background-attachment: fixed;
 }
 .heroTitle {
   color:#fff;
