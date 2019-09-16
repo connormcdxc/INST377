@@ -105,3 +105,35 @@ nav {
   display:flex;
   justify-content: space-between;
 }
+.parallaxsec {
+  background-attachment: fixed;
+  background-image: url(../images/art-big-data-blur-373543.jpg);
+  height: 250px;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.parallaxsec.black {
+  background-image: url(../images/art-big-data-blur-373543-black.jpg);
+}
+.parallaxsec p {
+  cursor: pointer;
+}
+@media (max-width: 1500px) {
+  .portalContainer {
+    flex-wrap:wrap;
+  }
+  .portal {
+    width: 25%;
+    margin-top:15px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .portal {
+    width:100%;
+
+  }
+}
