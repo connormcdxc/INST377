@@ -38,16 +38,19 @@
         </div>
     </section>
     <section class="basicSection parallaxsec black" id="black">
-        <p onclick="changecolor()">Black and white!</p>
+        <p>Black and white!</p>
     </section>
     <section class="basicSection parallaxsec">
-        <p onclick="changecolor()">Color!</p>
+        <p>Color!</p>
     </section>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
     <script>
-        var test = document.getElementById("black");
-        function changecolor() {
-            test.style.color = "transparent";
-        }
+        $('.parallaxsec p').click(function() {
+            $(this).toggleClass('transparent');
+        });
     </script>
 </body>
 </html>

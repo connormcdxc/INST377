@@ -120,6 +120,14 @@ nav {
 }
 .parallaxsec p {
   cursor: pointer;
+  background-color:#ccc;
+  padding:25px;
+  color:#333;
+  border-radius: 5px;
+}
+.transparent {
+  color: transparent !important;
+  background-color:transparent !important;
 }
 @media (max-width: 1500px) {
   .portalContainer {
