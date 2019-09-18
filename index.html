@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="top"></div>
     <nav>
         <div class="nav-logo">
             <img class="logo" src="images/cropped-logo.png">
@@ -15,7 +16,7 @@
             <a href="#top">Top</a>
         </div>
     </nav>
-    <section class="heroSection" id="top">
+    <section class="heroSection">
         <div>
             <h2 class="heroTitle">INST 377</h2>
             <p class="heroSubTitle">Dynamic Web Applications</p>
@@ -24,13 +25,28 @@
     <section class="basicSection">
         <div class="basicContainer portalContainer">
             <div class="portal">
-                <p>HTML/CSS</p>
+                <div class="front">
+                    <p>HTML/CSS</p>
+                </div>
+                <div class="back">
+                    <p>Extensive knowledge of web design</p>
+                </div>
             </div>
             <div class="portal">
-                <p>Javascript</p>
+                <div class="front">
+                    <p>Javascript/jQuery</p>
+                </div>
+                <div class="back">
+                    <p>Experience with both front end and server side Javascript</p>
+                </div>
             </div>
             <div class="portal">
-                <p>PHP</p>
+                <div class="front">
+                    <p>PHP/Symphony</p>
+                </div>
+                <div class="back">
+                    <p>Extensive experience with Drupal 7 and 8 and Wordpress.</p>
+                </div>
             </div>
         </div>
         <div class="basicContainer">
@@ -51,6 +67,23 @@
         $('.parallaxsec p').click(function() {
             $(this).toggleClass('transparent');
         });
+        //Rotate portal on enter
+        $('.portal').mouseenter(function() {
+            setTimeout(function(){ $( this ).find( ".back" ).css("transform", "rotateY(0deg)"); }, 500);   
+        });
+        $('.portal').mouseenter(function() {
+            $( this ).find( ".front" ).css("transform", "rotateY(90deg)");    
+        });
+        
+        //Rotate portal on exit
+        $('.portal').mouseleave(function() {
+            $( this ).find( ".back" ).css("transform", "rotateY(90deg)");
+        });
+        $('.portal').mouseleave(function() {
+            setTimeout(function(){ $( this ).find( ".front" ).css("transform", "rotateY(0deg)"); }, 500);
+        });
+        
+        
     </script>
 </body>
 </html>

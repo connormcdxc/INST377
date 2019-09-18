@@ -73,7 +73,7 @@ nav {
   display:flex;
   padding-left:10%;
   padding-right: 10%;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 .logo {
@@ -94,12 +94,36 @@ nav {
 }
 .portal {
   width:30%;
-  background-color: #ccc;
-  padding: 20px;
+  height:80px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  position: relative;
+}
+.portal .back {
+  transform: rotateY(90deg);
+  transition: all 500ms linear;
+  padding: 20px;
+  position: absolute;
+  background-color: #ccc;
+  height:80px;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+.portal .front {
+  transition: all 500ms linear;
+  position: absolute;
+  background-color: #ccc;
+  padding: 20px;
+  height:80px;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .portalContainer {
   display:flex;
