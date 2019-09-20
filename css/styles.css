@@ -75,6 +75,7 @@ nav {
   padding-right: 10%;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 .logo {
   width: auto;
@@ -94,7 +95,6 @@ nav {
 }
 .portal {
   width:30%;
-  height:80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,10 +104,10 @@ nav {
 .portal .back {
   transform: rotateY(90deg);
   transition: all 500ms linear;
-  padding: 20px;
+  padding: 25px;
   position: absolute;
   background-color: #ccc;
-  height:80px;
+  max-height:105px;
   width:100%;
   display:flex;
   justify-content: center;
@@ -116,10 +116,10 @@ nav {
 }
 .portal .front {
   transition: all 500ms linear;
-  position: absolute;
+  /*position: absolute;*/
   background-color: #ccc;
-  padding: 20px;
-  height:80px;
+  padding: 25px;
+  max-height:105px;
   width:100%;
   display:flex;
   justify-content: center;

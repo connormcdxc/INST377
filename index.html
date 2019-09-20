@@ -70,14 +70,23 @@
 
         //Rotate portal on enter
         $('.portal').mouseenter(function() {
-            $( this ).find( ".front" ).delay( 500 ).css("transform", "rotateY(90deg)");   
-            $( this ).find( ".back" ).css("transform", "rotateY(0deg)");   
+            var portal = this;
+            $( this ).find( ".front" ).delay( 500 ).css("transform", "rotateY(90deg)");
+            //Delay rotate so it seems like it's flipping   
+            setTimeout(function() {
+                $( portal ).find( ".back" ).css("transform", "rotateY(0deg)"); 
+            }, 500);
+              
         });
         
         //Rotate portal on exit
         $('.portal').mouseleave(function() {
+            var portal = this;
             $( this ).find( ".back" ).delay( 500 ).css("transform", "rotateY(90deg)");
-            $( this ).find( ".front" ).css("transform", "rotateY(0deg)"); 
+            //Delay rotate so it seems like it's flipping
+            setTimeout(function() {
+                $( portal ).find( ".front" ).css("transform", "rotateY(0deg)"); 
+            }, 500);
         });
     </script>
 </body>
