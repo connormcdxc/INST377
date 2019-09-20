@@ -67,23 +67,18 @@
         $('.parallaxsec p').click(function() {
             $(this).toggleClass('transparent');
         });
+
         //Rotate portal on enter
         $('.portal').mouseenter(function() {
-            setTimeout(function(){ $( this ).find( ".back" ).css("transform", "rotateY(0deg)"); }, 500);   
-        });
-        $('.portal').mouseenter(function() {
-            $( this ).find( ".front" ).css("transform", "rotateY(90deg)");    
+            $( this ).find( ".front" ).delay( 500 ).css("transform", "rotateY(90deg)");   
+            $( this ).find( ".back" ).css("transform", "rotateY(0deg)");   
         });
         
         //Rotate portal on exit
         $('.portal').mouseleave(function() {
-            $( this ).find( ".back" ).css("transform", "rotateY(90deg)");
+            $( this ).find( ".back" ).delay( 500 ).css("transform", "rotateY(90deg)");
+            $( this ).find( ".front" ).css("transform", "rotateY(0deg)"); 
         });
-        $('.portal').mouseleave(function() {
-            setTimeout(function(){ $( this ).find( ".front" ).css("transform", "rotateY(0deg)"); }, 500);
-        });
-        
-        
     </script>
 </body>
 </html>
