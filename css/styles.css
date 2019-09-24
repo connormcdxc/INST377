@@ -26,7 +26,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(33,33,33,0.5), rgba(33,33,33,0.5)), url(../images/art-colorful-contemporary-2047905.jpg);
+  background: linear-gradient(rgba(33,33,33,0.5), rgba(33,33,33,0.5)), url(../images/art-big-data-blur-373543.jpg);
   padding-top: 75px;
   padding-bottom: 75px;
   background-position: 50%;
@@ -50,8 +50,12 @@ a:hover {
   padding-top:60px;
   padding-bottom:60px;
 }
+#darkSection {
+  background-color: rgb(33,33,33);
+  color: #fff;
+}
 .basicContainer {
-  width:80%;
+  width:60%;
   margin:auto;
 }
 body::-webkit-scrollbar {
@@ -69,7 +73,7 @@ html{
 }
 nav {
   height:90px;
-  background-color:#ccc;
+  background-color:rgba(33,33,33);
   display:flex;
   padding-left:10%;
   padding-right: 10%;
@@ -80,6 +84,7 @@ nav {
 .logo {
   width: auto;
   height: 60px;
+  filter: brightness(0) invert(1);
 }
 .nav-logo {
   display:flex;
@@ -92,6 +97,9 @@ nav {
   justify-content: flex-end;
   display:flex;
   align-items: center;
+}
+.nav-links a {
+  color: #fff;
 }
 .portal {
   width:30%;
@@ -118,7 +126,7 @@ nav {
 .portal .front {
   transition: all 500ms linear;
   /*position: absolute;*/
-  background-color: #ccc;
+  background: linear-gradient(120deg, #0575E6, #00F260);
   padding: 25px;
   max-height:105px;
   width:100%;
@@ -162,7 +170,7 @@ nav {
 .information {
   position: absolute;
   height: auto;
-  width:80%;
+  width:60%;
   margin:auto;
   text-align:center;
   background-color: #fff;
