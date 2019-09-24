@@ -106,9 +106,10 @@ nav {
   transition: all 500ms linear;
   padding: 25px;
   position: absolute;
-  background-color: #ccc;
+  background: linear-gradient(120deg, #00F260, #0575E6);
   max-height:105px;
   width:100%;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.3);
   display:flex;
   justify-content: center;
   align-items: center;
@@ -131,16 +132,51 @@ nav {
 }
 .parallaxsec {
   background-attachment: fixed;
-  background-image: url(../images/art-big-data-blur-373543.jpg);
-  height: 250px;
+  /*background-image: url(../images/art-big-data-blur-373543.jpg);*/
+  height: 100vh;
+  background-position: 50%;
   color:white;
   display:flex;
   justify-content: center;
   align-items: center;
-
+  background-size:100%;
 }
-.parallaxsec.black {
-  background-image: url(../images/art-big-data-blur-373543-black.jpg);
+.parallaxsec.glyph {
+  background-image: url(../images/glyph.png);
+}
+.parallaxsec.glyph.black {
+  background-image: url(../images/glyph_b.png);
+}
+.parallaxsec.dci {
+  background-image: url(../images/dci.png);
+}
+.parallaxsec.dci.black {
+  background-image: url(../images/dci_b.png);
+}
+.parallaxsec.midpoint {
+  background-image: url(../images/midpoint.png);
+}
+.parallaxsec.midpoint.black {
+  background-image: url(../images/midpoint_b.png);
+}
+.information {
+  position: absolute;
+  height: auto;
+  width:80%;
+  margin:auto;
+  text-align:center;
+  background-color: #fff;
+  max-height: unset;
+  padding:25px;
+  height:fit-content;
+  top:5%;
+  bottom:5%;
+}
+.infoholder {
+  display:flex;
+  position:relative;
+  width:100%;
+  justify-content:center;
 }
 .parallaxsec p {
   cursor: pointer;
