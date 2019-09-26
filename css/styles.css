@@ -102,12 +102,13 @@ nav {
   color: #fff;
 }
 .portal {
-  width:30%;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   position: relative;
+  margin-bottom:10px;
 }
 .portal .back {
   transform: rotateY(90deg);
@@ -137,6 +138,7 @@ nav {
 .portalContainer {
   display:flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .parallaxsec {
   background-attachment: fixed;
