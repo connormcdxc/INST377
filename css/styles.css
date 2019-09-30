@@ -40,6 +40,9 @@ a:hover {
   text-align:center;
   font-family: 'Roboto', sans-serif;
 }
+.menu {
+  display:none;
+}
 .heroSubTitle {
   color:#fff;
   font-size:24px;
@@ -100,6 +103,8 @@ nav {
 }
 .nav-links a {
   color: #fff;
+  margin-left:10px;
+  margin-right:10px;
 }
 .portal {
   width:100%;
@@ -109,6 +114,41 @@ nav {
   border-radius: 5px;
   position: relative;
   margin-bottom:10px;
+}
+.portal:hover > .front {
+  transform: rotateY(90deg);
+}
+.portal:hover > .back {
+  transform: rotateY(0deg);
+}
+/* Menu icon found on https://icons8.com/icons/set/menu */
+.menu {
+  background-image:url(https://img.icons8.com/cotton/64/000000/menu.png);
+  width:64px;
+  height:64px;
+  position:relative;
+}
+.menu .menuholder {
+  width:0px;
+  height:auto;
+  position:fixed;
+  right:0px;
+  display:flex;
+  background-color: rgb(33,33,33);
+  color:white;
+  flex-direction:column;
+  padding-top:90px;
+  padding-bottom:90px;
+  height:100vh;
+  transition: all 500ms ease;
+}
+.menuholder a {
+  color:white;
+  margin-left:15px;
+  margin-right:15px;
+}
+.menuholder.visible {
+  width: auto;
 }
 .portal .back {
   transform: rotateY(90deg);
@@ -203,8 +243,11 @@ nav {
   .portalContainer {
     flex-wrap:wrap;
   }
+  .parallaxsec {
+    background-size: cover;
+  }
   .portal {
-    width: 25%;
+    width: 100%;
     margin-top:15px;
     margin-bottom: 15px;
   }
@@ -213,5 +256,14 @@ nav {
   .portal {
     width:100%;
 
+  }
+  .parallaxsec {
+    background-size: cover;
+  }
+  .menu {
+    display:block;
+  }
+  .nav-links {
+    display:none;
   }
 }

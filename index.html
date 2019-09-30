@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Home | INST 377</title>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -11,10 +11,21 @@
     <div>
         <nav>
             <div class="nav-logo">
-                <img class="logo" src="images/cropped-logo.png">
+                <a href="#top"><img class="logo" src="images/cropped-logo.png" alt="logo"></a>
             </div>
             <div class="nav-links">
                 <a href="#top">Top</a>
+                <a href="#dci">DCI</a>
+                <a href="#glyph">Glyphtech</a>
+                <a href="#midpoint">Midpoint</a>
+            </div>
+            <div class="menu">
+                <div class="menuholder">
+                    <a href="#top">Top</a>
+                    <a href="#dci">DCI</a>
+                    <a href="#glyph">Glyphtech</a>
+                    <a href="#midpoint">Midpoint</a>
+                </div>
             </div>
         </nav>
     </div>
@@ -26,6 +37,7 @@
     </section>
     <div id="nestholder">
         <div id="nest1">
+            <!--Had issues with the jQuery animations of flipping, if you comment out .portal:hover > .front and .portal:hover > .back in styles.css and uncomment the script at the bottom of this page you can see the original effect.-->
     <section class="basicSection" id="darkSection">
         <div class="basicContainer portalContainer">
             <div class="portal">
@@ -59,7 +71,7 @@
     </section>
 </div>
 <div id="nest2">
-    <section class="basicSection parallaxsec dci black" id="">
+    <section class="basicSection parallaxsec dci black" id="dci">
         
     </section>
     <div class="infoholder">
@@ -73,7 +85,7 @@
     <section class="basicSection dci parallaxsec">
         
     </section>
-    <section class="basicSection parallaxsec glyph black" id="black">
+    <section class="basicSection parallaxsec glyph black" id="glyph">
        
     </section>
     <div class="infoholder">
@@ -86,7 +98,7 @@
     <section class="basicSection glyph parallaxsec">
         
     </section>
-    <section class="basicSection parallaxsec midpoint black" id="">
+    <section class="basicSection parallaxsec midpoint black" id="midpoint">
         
     </section>
     <div class="infoholder">
@@ -104,7 +116,7 @@
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
   crossorigin="anonymous"></script>
-    <script>
+   <!-- <script>
         $('.parallaxsec p').click(function() {
             $(this).toggleClass('transparent');
         });
@@ -128,6 +140,11 @@
             setTimeout(function() {
                 $( portal ).find( ".front" ).css("transform", "rotateY(0deg)"); 
             }, 500);
+        });
+    </script>-->
+    <script>
+        $('.menu').click(function() {
+            $('.menu .menuholder').toggleClass('visible');
         });
     </script>
 </body>
